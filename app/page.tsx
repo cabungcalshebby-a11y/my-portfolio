@@ -292,14 +292,17 @@ export default function Home() {
       gap: "15px"
     }}
   
-  button type="submit" style={{
-  backgroundColor: "#6B705C",
-  color: "#fff",
-  padding: "12px",
-  borderRadius: "25px",
-  border: "none",
-  cursor: "pointer"
-}}>
+textarea
+  name="message"
+  placeholder="Your Message"
+  required
+  style={{
+    ...inputStyle,
+    color: "#000",
+    backgroundColor: "#fff",
+    minHeight: "120px"
+  }}
+/>
     
       Send Message
     </button>
