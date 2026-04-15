@@ -271,12 +271,12 @@ export default function Home() {
 
   <p style={{
     color: "#2E2E2E",
-  marginBottom: "40px",
-  fontSize: "17px",
-  fontWeight: "500",
-  maxWidth: "500px",
-  marginLeft: "auto",
-  marginRight: "auto"
+    marginBottom: "40px",
+    fontSize: "17px",
+    fontWeight: "500",
+    maxWidth: "500px",
+    marginLeft: "auto",
+    marginRight: "auto"
   }}>
     Ready to grow your business? Send me a message and let's talk!
   </p>
@@ -291,24 +291,49 @@ export default function Home() {
       flexDirection: "column",
       gap: "15px"
     }}
-  
-textarea
-  name="message"
-  placeholder="Your Message"
-  required
-  style={{
-    ...inputStyle,
-    color: "#000",
-    backgroundColor: "#fff",
-    minHeight: "120px"
-  }}
-/>
-    
+  >
+
+    <input
+      type="text"
+      name="name"
+      placeholder="Your Name"
+      required
+      style={inputStyle}
+    />
+
+    <input
+      type="email"
+      name="email"
+      placeholder="Your Email"
+      required
+      style={inputStyle}
+    />
+
+    <textarea
+      name="message"
+      placeholder="Your Message"
+      required
+      style={{
+        ...inputStyle,
+        color: "#000",
+        backgroundColor: "#fff",
+        minHeight: "120px"
+      }}
+    />
+
+    <button
+      type="submit"
+      style={{
+        backgroundColor: "#6B705C",
+        color: "#fff",
+        padding: "12px",
+        borderRadius: "25px",
+        border: "none",
+        cursor: "pointer"
+      }}
+    >
       Send Message
     </button>
+
   </form>
 </section>
-    </div>
-
-  );
-}
