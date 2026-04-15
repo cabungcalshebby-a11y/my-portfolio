@@ -291,25 +291,21 @@ export default function Home() {
       flexDirection: "column",
       gap: "15px"
     }}
-  >
-    <textarea 
-  name="message" 
-  placeholder="Your Message" 
-  required 
-  style={{
-    ...inputStyle,
-    color: "#2E2E2E",
-    backgroundColor: "#fff",
-    minHeight: "120px"
-  }} 
-/>
-      border: "none",
-      cursor: "pointer"
-    }}>
+  
+  button type="submit" style={{
+  backgroundColor: "#6B705C",
+  color: "#fff",
+  padding: "12px",
+  borderRadius: "25px",
+  border: "none",
+  cursor: "pointer"
+}}>
+    
       Send Message
     </button>
   </form>
 </section>
     </div>
+
   );
 }
