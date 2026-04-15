@@ -292,15 +292,17 @@ export default function Home() {
       gap: "15px"
     }}
   >
-    <input type="text" name="name" placeholder="Your Name" required style={inputStyle} />
-    <input type="email" name="email" placeholder="Your Email" required style={inputStyle} />
-    <textarea name="message" placeholder="Your Message" required style={inputStyle} />
-
-    <button type="submit" style={{
-      backgroundColor: "#6B705C",
-      color: "#fff",
-      padding: "12px",
-      borderRadius: "25px",
+    <textarea 
+  name="message" 
+  placeholder="Your Message" 
+  required 
+  style={{
+    ...inputStyle,
+    color: "#2E2E2E",
+    backgroundColor: "#fff",
+    minHeight: "120px"
+  }} 
+/>
       border: "none",
       cursor: "pointer"
     }}>
