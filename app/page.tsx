@@ -270,8 +270,13 @@ export default function Home() {
   </h2>
 
   <p style={{
-    color: "#555",
-    marginBottom: "40px"
+    color: "#2E2E2E",
+  marginBottom: "40px",
+  fontSize: "17px",
+  fontWeight: "500",
+  maxWidth: "500px",
+  marginLeft: "auto",
+  marginRight: "auto"
   }}>
     Ready to grow your business? Send me a message and let's talk!
   </p>
