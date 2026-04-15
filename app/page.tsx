@@ -1,7 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-
+const inputStyle = {
+  padding: "12px",
+  borderRadius: "10px",
+  border: "1px solid #ddd",
+  fontSize: "14px"
+};
 export default function Home() {
   return (
     <div style={{ fontFamily: "Arial, sans-serif" }}>
@@ -251,7 +256,53 @@ export default function Home() {
           </button>
         </a>
       </section>
+<section style={{
+  padding: "100px 20px",
+  backgroundColor: "#F8F5F0",
+  textAlign: "center"
+}}>
+  <h2 style={{
+    fontSize: "32px",
+    color: "#6B705C",
+    marginBottom: "20px"
+  }}>
+    Let’s Work Together
+  </h2>
 
+  <p style={{
+    color: "#555",
+    marginBottom: "40px"
+  }}>
+    Ready to grow your business? Send me a message and let's talk!
+  </p>
+
+  <form
+    action="https://formsubmit.co/Cabungcalshebby@gmail.com"
+    method="POST"
+    style={{
+      maxWidth: "500px",
+      margin: "auto",
+      display: "flex",
+      flexDirection: "column",
+      gap: "15px"
+    }}
+  >
+    <input type="text" name="name" placeholder="Your Name" required style={inputStyle} />
+    <input type="email" name="email" placeholder="Your Email" required style={inputStyle} />
+    <textarea name="message" placeholder="Your Message" required style={inputStyle} />
+
+    <button type="submit" style={{
+      backgroundColor: "#6B705C",
+      color: "#fff",
+      padding: "12px",
+      borderRadius: "25px",
+      border: "none",
+      cursor: "pointer"
+    }}>
+      Send Message
+    </button>
+  </form>
+</section>
     </div>
   );
 }
